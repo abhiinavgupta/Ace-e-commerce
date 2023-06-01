@@ -4,7 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 export default function Copyright({ country }) {
   return (
     <div className={styles.footer__copyright}>
-      <section>©2022 SHOPPAY All Rights Resereved.</section>
+      <section>©2022 ACE | Abhinav Gupta | All Rights Resereved.</section>
       <section>
         <ul>
           {data.map((link) => (
