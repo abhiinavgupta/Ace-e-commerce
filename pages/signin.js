@@ -30,7 +30,7 @@ const initialvalues = {
   login_error: "",
 };
 export default function signin({ providers, callbackUrl, csrfToken }) {
-  console.log(providers);
+  // console.log(providers);
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(initialvalues);
   const {
