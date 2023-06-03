@@ -1,44 +1,44 @@
 export const offersAarray = [
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://tiimg.tistatic.com/fp/1/007/302/zipper-wool-cotton-jacket-for-mens-full-sleeve-plain-pattern-top-quality-excellent-design-stunning-look-soft-texture-skin-friendly-comfortable-to-wear-well-stitched-casual-wear-854.jpg",
       price: "144.37",
       discount: "17",
     },
   
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://fossil.scene7.com/is/image/FossilPartners/FS5986_main?$sfcc_fos_medium$",
       price: "12.76",
       discount: "19",
     },
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://assets.sunglasshut.com/is/image/LuxotticaRetail/805289439899_SGH_gryBG_qt.png?impolicy=SEO_1x1",
       price: "4.09",
       discount: "32",
     },
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://cdn.shopify.com/s/files/1/0550/7619/2464/products/200250_770copy_600x.jpg?v=1680770535",
       price: "9.61",
       discount: "90",
     },
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8MygBer11nQoJnWlOevmn52Qj0obndYUTg&usqp=CAU",
       price: "6.25",
       discount: "45",
     },
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHiC0RZelF1a4oxBejOKYj_HAWYthATU3xotQGsc4zQHvjIlVw5FjBHeutPVbYB0aiObY&usqp=CAU",
       price: "13.74",
       discount: "10",
     },
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://m.media-amazon.com/images/I/6165SQZ9auL._UL1300_.jpg",
       price: "198.2",
       discount: "5",
     },
@@ -256,37 +256,37 @@ export const offersAarray = [
   export const userSwiperArray = [
     {
       image:
-        "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+        "https://www.oikotaantees.in/wp-content/uploads/2021/09/Shiva-T-shirt-in-white-background-.jpeg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://tiimg.tistatic.com/fp/1/007/302/zipper-wool-cotton-jacket-for-mens-full-sleeve-plain-pattern-top-quality-excellent-design-stunning-look-soft-texture-skin-friendly-comfortable-to-wear-well-stitched-casual-wear-854.jpg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Golden-Colour-Analog-Digital-Watch-for-Men-1.jpg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://www.ubuy.co.in/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjMzYjM0ZjgwMzMzNDkxZDdhNDhkZjBkLXVidXktb25saW5lLXNob3BwaW5nLmpwZw.jpg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-trainer-sneaker--BP9U1PTX02_PM2_Front%20view.jpg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://m.media-amazon.com/images/I/61vejHnoq+L._SY695_.jpg",
       link: "",
     },
     {
       image:
-      "https://www.socialmediaexaminer.com/wp-content/uploads/2021/09/facebook-event-for-flash-sale.png",
+      "https://static.toiimg.com/thumb/imgsize-23456,msid-73228823,width-600,resizemode-4/73228823.jpg",
       link: "",
     },
   ];

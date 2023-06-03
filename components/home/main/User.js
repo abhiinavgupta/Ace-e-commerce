@@ -13,7 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/effect-cards";
 // import required modules
-import { EffectCards, Navigation } from "swiper";
+import { Autoplay, EffectCards, Navigation } from "swiper";
 import { userSwiperArray } from "../../../data/home";
 export default function User() {
   const { data: session } = useSession();
@@ -38,7 +38,7 @@ export default function User() {
             />
             <div className={styles.user__infos_btns}>
               <button>Register</button>
-              <button>Login</button>
+              <button >Login</button>
             </div>
           </div>
         )}
@@ -82,7 +82,8 @@ export default function User() {
             effect={"cards"}
             grabCursor={true}
             navigation={true}
-            modules={[EffectCards, Navigation]}
+            Autoplay={true}
+            modules={[EffectCards, Navigation, Autoplay]}
             className="user__swiper"
             style={{
               maxWidth: "180px",

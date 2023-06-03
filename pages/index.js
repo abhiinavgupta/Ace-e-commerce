@@ -8,18 +8,62 @@ import db from "../utils/db";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react"
 import Main from "../components/home/main";
+import FlashDeals from "../components/home/flashDeals";
+import Category from "../components/home/category";
+import ProductsSwiper from "../components/productsSwiper";
 import Product from "../models/Product";
+import {
+  gamingSwiper,
+  homeImprovSwiper,
+  women_accessories,
+  women_dresses,
+  women_shoes,
+  women_swiper,
+} from "../data/home";
+import { useMediaQuery } from "react-responsive";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ country, products }) {
   const { data: session } = useSession()
   console.log(session);
+
+const isMedium = useMediaQuery({ query: "(max-width:850px)" });
+const isMobile = useMediaQuery({ query: "(max-width:550px)" });
+
   return (
     <div>
      <Header country={country} />
      <div className={styles.home}>
         <div className={styles.container}>
         <Main />
+        <FlashDeals />
+        <div className={styles.home__category}>
+            <Category
+              header="Dresses"
+              products={women_dresses}
+              background="#D4ADFC"
+            />
+            {!isMedium && (
+              <Category
+                header="Shoes"
+                products={women_shoes}
+                background="#5C469C"
+              />
+            )}
+            {isMobile && (
+              <Category
+                header="Shoes"
+                products={women_shoes}
+                background="#5C469C"
+              />
+            )}
+            <Category
+              header="Accessories"
+              products={women_accessories}
+              background="#D4ADFC"
+            />
+          </div>
+          <ProductsSwiper products={women_swiper} />
         </div>
         </div>
      <Footer country={country} />

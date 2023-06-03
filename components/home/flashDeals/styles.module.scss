@@ -1,0 +1,129 @@
+.flashDeals {
+    margin: 2rem 0;
+    background: #fff;
+    // gap: 20px;
+    &__header {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      font-weight: 900;
+      font-size: 25px;
+      text-transform: uppercase;
+      background: $yellow-color;
+      margin-bottom: 20px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      border-radius: 20px;
+      @media (max-width: 610px) {
+        font-size: 18px;
+      }
+      @media (max-width: 508px) {
+        font-size: 15px;
+      }
+      @media (max-width: 464px) {
+        flex-direction: column;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 1rem;
+      // border-radius: 20px;
+      @media (max-width: 600px) {
+        justify-content: center;
+      }
+    }
+    svg{
+      margin-top: 0;
+    }
+  }
+  .card {
+    height: 420px;
+    width: 283px;
+    border-radius: 20px;
+    // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+    &__img {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      border-radius: 20px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .flash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+        align-items: center;
+        width: 50px;
+        height: 65px;
+        border-radius: 20px;
+        background: $yellow-color;
+        padding: 1rem;
+        span {
+          color: #333;
+          font-weight: 600;
+          font-size: 18px;
+          transform: translateY(18px);
+        }
+        svg {
+          position: absolute;
+          transform: scale(2);
+          fill: #333;
+        }
+      }
+    }
+    &__price {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 9px;
+      span {
+        font-weight: 700;
+        &:first-of-type {
+          color: $redish-color;
+        }
+        &:last-of-type {
+          font-size: 14px;
+          font-weight: normal;
+          text-decoration: line-through;
+          color: #666;
+        }
+      }
+    }
+    &__bar {
+      width: 100%;
+      height: 10px;
+      border-radius: 10px;
+      background: #ccc;
+      margin-top: 2px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      &_inner {
+        background: $yellow-color;
+        border-radius: 10px;
+        height: 100%;
+        // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      }
+    }
+    &__percentage {
+      font-size: 14px;
+      color: #111;
+      margin-top: 9px;
+      width: 100%;
+      font-weight: 700;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  
