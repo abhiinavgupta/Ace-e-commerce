@@ -12,6 +12,7 @@ import FlashDeals from "../components/home/flashDeals";
 import Category from "../components/home/category";
 import ProductsSwiper from "../components/productsSwiper";
 import Product from "../models/Product";
+import ProductCard from "../components/productCard";
 import {
   gamingSwiper,
   homeImprovSwiper,
@@ -24,8 +25,9 @@ import { useMediaQuery } from "react-responsive";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ country, products }) {
+  // console.log("products", products)
   const { data: session } = useSession()
-  console.log(session);
+  // console.log(session);
 
 const isMedium = useMediaQuery({ query: "(max-width:850px)" });
 const isMobile = useMediaQuery({ query: "(max-width:550px)" });
@@ -64,6 +66,11 @@ const isMobile = useMediaQuery({ query: "(max-width:550px)" });
             />
           </div>
           <ProductsSwiper products={women_swiper} />
+          <div className={styles.products}>
+            {products.map((product) => (
+              <ProductCard product={product} key={product._id} />
+            ))}
+          </div>
         </div>
         </div>
      <Footer country={country} />
@@ -74,6 +81,7 @@ const isMobile = useMediaQuery({ query: "(max-width:550px)" });
 export async function getServerSideProps() {
   db.connectDb();
   let products = await Product.find().sort({ createdAt: -1 }).lean();
+  // console.log(products)
   let data = await axios
     .get("https://api.ipregistry.co/?key=vbcu12byt5kgca9j")
     .then((res) => {

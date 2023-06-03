@@ -7,12 +7,12 @@ export default function Copyright({ country }) {
       <section>©2022 ACE | Abhinav Gupta | All Rights Resereved.</section>
       <section>
         <ul>
-          {data.map((link) => (
+          {data.map((link)  => (
             <li>
               <Link href={link.link}>{link.name}</Link>
             </li>
           ))}
-          <li>
+          <li >
             <a>
               <IoLocationSharp /> 
               {country?.name}
