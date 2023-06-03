@@ -7,6 +7,7 @@ import Footer from '../components/footer'
 import db from "../utils/db";
 import axios from "axios";
 import { useSession, signIn, signOut } from "next-auth/react"
+import Main from "../components/home/main";
 import Product from "../models/Product";
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +17,12 @@ export default function Home({ country, products }) {
   return (
     <div>
      <Header country={country} />
-     
-          <Footer country={country} />
+     <div className={styles.home}>
+        <div className={styles.container}>
+        <Main />
+        </div>
+        </div>
+     <Footer country={country} />
          
     </div>
   );
