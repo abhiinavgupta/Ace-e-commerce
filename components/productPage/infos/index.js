@@ -128,10 +128,10 @@ export default function Infos({ product, setActiveImg }) {
           {product.numReviews == 1 ? " review" : " reviews"})
         </div>
         <div className={styles.infos__price}>
-          {!size ? <h2>{product.priceRange}</h2> : <h1>{product.price}$</h1>}
+          {!size ? <h2>{product.priceRange}</h2> : <h1>{product.price}₹</h1>}
           {product.discount > 0 ? (
             <h3>
-              {size && <span>{product.priceBefore}$</span>}
+              {size && <span>{product.priceBefore}₹</span>}
               <span>(-{product.discount}%)</span>
             </h3>
           ) : (
@@ -140,7 +140,7 @@ export default function Infos({ product, setActiveImg }) {
         </div>
         <span className={styles.infos__shipping}>
           {product.shipping
-            ? `+${product.shipping}$ Shipping fee`
+            ? `+ ₹${product.shipping} Shipping fee`
             : "Free Shipping"}
         </span>
         <span>

@@ -1,6 +1,9 @@
 .swiper {
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 0px 0 #000, 0 0px 0px 0 #000;
+    // margin-top: 20px;
+    // gap: 10px;
     @media (min-width: 500px) {
       flex-direction: row-reverse;
       justify-self: flex-start;
@@ -12,19 +15,24 @@
     @media (min-width: 1000px) {
       flex-direction: row-reverse;
       justify-self: flex-start;
-      gap: 10px;
+      gap: 20px;
     }
     &__list {
-      margin-top: 7px;
+      margin-top: 17px;
       display: flex;
       gap: 10px;
       height: 130px;
       max-width: 500px;
+      
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         cursor: pointer;
+        box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+        border-radius: 20px;
+        // margin-top: 20px;
       }
       @media (min-width: 500px) {
         margin-top: 0;
@@ -47,9 +55,10 @@
         }
       }
       @media (min-width: 1000px) {
-        margin-top: 0;
+        margin-top: 10px;
         flex-direction: column;
         height: 100%;
+        gap: 10px;
         img {
           width: 100px;
         }
@@ -57,10 +66,22 @@
     }
     &__active {
       z-index: 99;
+      
     }
+
+    img{
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+        border-radius: 20px;
+        // height: 200px;
+
+        // margin-right: 20px;
+    }
+
   }
   .active {
-    outline: 1px solid #000;
+    border-radius: 20px;
+    outline: 2px solid #000;
     outline-offset: 3px;
+    
   }
   
