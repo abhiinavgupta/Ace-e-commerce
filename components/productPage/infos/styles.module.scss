@@ -66,7 +66,7 @@
         border-radius: 50%;
         display: grid;
         place-items: center;
-        border: 1px solid #e6e6e6;
+        border: 1px solid #716f6f;
         cursor: pointer;
         box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
         &:hover {
@@ -205,6 +205,12 @@
         font-weight: 700;
         &__summary {
           background: transparent;
+        }
+        svg{
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
         }
       }
     }

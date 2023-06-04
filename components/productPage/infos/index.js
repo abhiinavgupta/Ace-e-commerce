@@ -213,7 +213,7 @@ export default function Infos({ product, setActiveImg }) {
         {success && <span className={styles.success}>{success}</span>}
         <Share />
         <Accordian details={[product.description, ...product.details]} />
-        <SimillarSwiper />
+        {/* <SimillarSwiper /> */}
       </div>
     </div>
   );

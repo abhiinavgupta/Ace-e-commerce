@@ -82,8 +82,8 @@ export async function getServerSideProps(context) {
       ? `From ${(prices[0] - prices[0] / subProduct.discount).toFixed(2)} to ${(
           prices[prices.length - 1] -
           prices[prices.length - 1] / subProduct.discount
-        ).toFixed(2)}$`
-      : `From ${prices[0]} to ${prices[prices.length - 1]}$`,
+        ).toFixed(2)}₹`
+      : `From ${prices[0]} to ${prices[prices.length - 1]}₹`,
     price:
       subProduct.discount > 0
         ? (

@@ -1,5 +1,6 @@
 .reviews {
     margin-top: 1rem;
+    
     @media (max-width: 755px) {
       h1 {
         font-size: 25px !important;
@@ -14,6 +15,8 @@
       display: flex;
       align-items: center;
       gap: 10rem;
+      border-radius: 20px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
       @media (max-width: 930px) {
         gap: 3rem;
         padding: 1rem;
@@ -30,6 +33,7 @@
           gap: 10px;
           font-weight: 700;
           font-size: 20px;
+          
           svg {
             width: 35px;
             height: 35px;
@@ -41,6 +45,8 @@
         flex-direction: column;
         gap: 1rem;
         margin-left: 2rem;
+        
+        
         &_review {
           display: flex;
           align-items: center;
@@ -56,12 +62,18 @@
             height: 5px;
             background: #ccc;
             border-radius: 10px;
+            box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
             overflow: hidden;
+            &:hover {
+              transform: scale(1.06);
+            }
             &__inner {
               position: absolute;
               left: 0;
               height: 100%;
               background: #ff4747;
+              box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+              
             }
           }
           span {
@@ -80,6 +92,8 @@
       font-weight: 900;
       color: #fff;
       cursor: pointer;
+      border-radius: 20px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     }
     &__add {
       margin-top: 1rem;
@@ -88,13 +102,16 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      border-radius: 10px;
+      border-radius: 20px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      
   
       &_wrap {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        
       }
       textarea {
         border: none;
@@ -102,6 +119,8 @@
         resize: none;
         min-height: 150px;
         padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 2px 20px 0 #000, 0 2px 4px 0 #000;
       }
       .login_btn {
         display: flex;
@@ -112,6 +131,7 @@
       .disabled {
         cursor: not-allowed;
         background: #cccccc4f;
+        
       }
     }
   }
@@ -120,12 +140,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    
     span {
       position: relative;
       img {
         width: 100px;
         height: 150px;
         object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
       }
       svg {
         position: absolute;
@@ -171,6 +194,7 @@
         object-fit: cover;
       }
       &_wrap {
+        
       }
       &_menu {
         padding: 0;
@@ -180,13 +204,19 @@
         top: 102%;
         right: 0;
         z-index: 1;
-        box-shadow: $shadow-1;
+        // box-shadow: $shadow-1;
+
+        border-radius: 10px;
+        box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
         li {
           width: 100%;
           display: grid;
           place-items: center;
+          // background: transparent;
           width: 150px;
           height: 50px;
+          border-radius: 10px;
+          // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
           &:hover {
             background: #f7f8fa;
           }
@@ -195,6 +225,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            
           }
         }
       }
@@ -204,6 +235,7 @@
     position: relative;
     padding: 1rem 0;
     display: flex;
+    
     gap: 1rem;
     border-bottom: 1px solid #ccc;
     .flex {
@@ -214,10 +246,11 @@
       gap: 1rem !important;
     }
     &__img {
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
       object-fit: cover;
       border-radius: 50%;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     }
     @media (max-width: 880px) {
       flex-direction: column;
@@ -234,6 +267,7 @@
         border-radius: 50%;
         object-fit: cover;
         filter: blur(1px);
+        // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
       }
     }
     &__review {
@@ -256,9 +290,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      transition: transform 0.3s ease;
+      border-radius: 20px;
+      box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
+      &:hover {
+        transform: scale(1.5);
+      }
       img {
         width: 100px;
         height: 150px;
+        border-radius: 20px;
         object-fit: cover;
         cursor: pointer;
         @media (max-width: 450px) {

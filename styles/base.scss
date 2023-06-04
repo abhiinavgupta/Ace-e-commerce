@@ -303,13 +303,18 @@ $cubic-bezier: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .simillar_swiper {
   max-width: 650px;
+  box-shadow: 0px 3px 20px 0 #000, 0 2px 4px 0 #000;
+  background: transparent;
   .swiper-pagination {
     display: none !important;
   }
   img {
     width: 100px;
     height: 160px;
+    border-radius: 20px;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     object-fit: cover;
+    // gap: 100px;
     cursor: pointer;
     @media (min-width: 461px) {
       width: 150px;
