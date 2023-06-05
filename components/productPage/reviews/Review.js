@@ -2,7 +2,7 @@ import { Rating } from "@mui/material";
 import styles from "./styles.module.scss";
 import { AiOutlineLike } from "react-icons/ai";
 export default function Review({ review }) {
-  // const { name, image } = review.reviewBy;
+  const { name, image } = review.reviewBy;
   return (
     <div className={styles.review}>
       <div className={styles.flex}>
@@ -10,7 +10,7 @@ export default function Review({ review }) {
           <h4>
             {name.slice(0, 1)}***{name.slice(name.length - 1, name.length)}
           </h4>
-          {/* <img src={image} alt="" /> */}
+          <img src={image} alt="" />
         </div>
         <div className={styles.review__review}>
           <Rating

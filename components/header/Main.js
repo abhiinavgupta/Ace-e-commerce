@@ -24,7 +24,7 @@ export default function Main({ searchHandler }) {
       <div className={styles.main__container}>
         <Link href="/" legacyBehavior>
           <a className={styles.logo}>
-            <img src="../../../ace-low-resolution-logo-color-on-transparent-background.png" alt="" />
+            <img src="../../../DC55F90B-C5FA-4363-BCCB-84C9441164B6.jpeg" alt="" />
           </a>
         </Link>
         <form onSubmit={(e) => handleSearch(e)} className={styles.search}>

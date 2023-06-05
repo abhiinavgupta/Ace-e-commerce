@@ -7,7 +7,7 @@ export default function Links() {
       {links.map((link, i) => (
         <ul>
           {i === 0 ? (
-            <img src="../../../ace-low-resolution-logo-color-on-transparent-background.png" alt="" />
+            <img src="../../../DC55F90B-C5FA-4363-BCCB-84C9441164B6.jpeg" alt="" />
           ) : (
             <b>{link.heading}</b>
           )}
