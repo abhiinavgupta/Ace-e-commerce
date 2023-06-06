@@ -34,6 +34,7 @@
   }
   &__products {
     grid-area: products;
+  
     @media (min-width: 900px) {
       transform: translateY(-130px) !important;
     }

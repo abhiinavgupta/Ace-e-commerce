@@ -44,7 +44,7 @@ export default function Product({ product, selected, setSelected }) {
       {product.quantity < 1 && <div className={styles.blur}></div>}
       <div className={styles.product__header}>
         <img src="../../../images/store.webp" alt="" />
-        M74JJI Official Store
+        ACE Official Store
       </div>
       <div className={styles.product__image}>
         <div
@@ -57,7 +57,7 @@ export default function Product({ product, selected, setSelected }) {
             <h1>
               {product.name.length > 30
                 ? `${product.name.substring(0, 30)}`
-                : product.name}
+                : product.name}...
             </h1>
             <div style={{ zIndex: "2" }}>
               <BsHeart />
@@ -72,17 +72,17 @@ export default function Product({ product, selected, setSelected }) {
           <div className={styles.product__style}>
             <img src={product.color.image} alt="" />
             {product.size && <span>{product.size}</span>}
-            {product.price && <span>{product.price.toFixed(2)}$</span>}
+            {product.price && <span>{product.price.toFixed(2)}₹</span>}
             <MdOutlineKeyboardArrowRight />
           </div>
           <div className={styles.product__priceQty}>
             <div className={styles.product__priceQty_price}>
               <span className={styles.price}>
-                USD{(product.price * product.qty).toFixed(2)}$
+              ₹{(product.price * product.qty).toFixed(2)}
               </span>
               {product.price !== product.priceBefore && (
                 <span className={styles.priceBefore}>
-                  USD{product.priceBefore}$
+                ₹{product.priceBefore}
                 </span>
               )}
               {product.discount > 0 && (
@@ -107,7 +107,7 @@ export default function Product({ product, selected, setSelected }) {
           </div>
           <div className={styles.product__shipping}>
             {product.shipping
-              ? `+${product.shipping}$ Shipping fee`
+              ? `+₹${product.shipping} Shipping fee`
               : "Free Shipping"}
           </div>
           {product.quantity < 1 && (

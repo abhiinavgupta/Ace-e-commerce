@@ -1,5 +1,6 @@
 .wrapper {
-    margin-top: 1.8rem;
+    margin-top: 2.0rem;
+    // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     .header {
       height: 50px;
       background: $yellow-color;
@@ -10,6 +11,7 @@
       align-items: center;
       font-weight: 600;
       margin-bottom: 5px;
+      // box-shadow: 0px 0px 0px 0 #000, 0 0px 0px 0 #000;
     }
     .product {
       &__img {

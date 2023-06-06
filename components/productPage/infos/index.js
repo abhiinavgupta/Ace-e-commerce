@@ -37,6 +37,8 @@ export default function Infos({ product, setActiveImg }) {
       setQty(product.quantity);
     }
   }, [router.query.size]);
+
+  
   const addToCartHandler = async () => {
     if (!router.query.size) {
       setError("Please Select a size");

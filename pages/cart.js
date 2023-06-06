@@ -12,7 +12,8 @@ import ProductsSwiper from "../components/productsSwiper";
 import { women_swiper } from "../data/home";
 import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/router";
-import { saveCart } from "../requests/user";
+import { saveCart } from "../requests/user.js";
+import axios from "axios";
 export default function cart() {
   const Router = useRouter();
   const { data: session } = useSession();
@@ -23,6 +24,21 @@ export default function cart() {
   const [shippingFee, setShippingFee] = useState(0);
   const [subtotal, setSubtotal] = useState(0);
   const [total, setTotal] = useState(0);
+
+
+  useEffect(()=>{
+  const update = async()=>{
+    const {data} = await axios.post('/api/updateCart',{
+products : cart.cartItems,
+    });
+    dispatch(updateCart(data))
+  };
+  if (cart.cartItems.length > 0){
+    update();
+  }
+  },[])
+
+
   useEffect(() => {
     setShippingFee(
       selected.reduce((a, c) => a + Number(c.shipping), 0).toFixed(2)
@@ -34,10 +50,18 @@ export default function cart() {
       ).toFixed(2)
     );
   }, [selected]);
+
+
+
+
+
+
+
   //-----------------------
   const saveCartToDbHandler = async () => {
+    Router.push("/checkout");
     if (session) {
-      const res = saveCart(selected);
+      const res = saveCart(selected , session.user.id);
       Router.push("/checkout");
     } else {
       signIn();

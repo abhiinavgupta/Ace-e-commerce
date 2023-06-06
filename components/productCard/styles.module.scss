@@ -2,6 +2,7 @@
     position: relative;
     width: 290px;
     height: 500px;
+    // box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     &__infos {
       width: 100%;
       margin-top: 15px;
@@ -69,6 +70,7 @@
     position: relative;
     cursor: pointer;
     background: #fff;
+    box-shadow: 0px 12px 20px 0 #000, 0 2px 4px 0 #000;
     img {
       height: 390px;
       display: block;
