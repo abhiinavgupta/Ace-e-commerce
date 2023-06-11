@@ -1,15 +1,15 @@
 import axios from "axios";
 
-export const saveCart = async (cart ) => {
+export const saveCart = async (cart , user_id ) => {
   try {
     const { data } = await axios.post('/api/user/saveCart', {
       cart,
+      user_id
     });
     return data;
-    console.log(data);
+    // console.log(data);
   } catch (error) {
-    return error.response.data.message
-    ;
+    return error.response.data.message;
   }
 };
 export const saveAddress = async (address, userId) => {

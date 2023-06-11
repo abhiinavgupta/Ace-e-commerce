@@ -59,7 +59,7 @@ products : cart.cartItems,
 
   //-----------------------
   const saveCartToDbHandler = async () => {
-    Router.push("/checkout");
+    // Router.push("/checkout");
     if (session) {
       const res = saveCart(selected , session.user.id);
       Router.push("/checkout");

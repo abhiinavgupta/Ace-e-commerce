@@ -28,11 +28,12 @@ handler.post(async (req, res) => {
     };
   });
   const data = await Promise.all(promises)
-//   console.log(data);
+ 
     db.disconnectDb();
     return res.json(data);
 
   } catch (error) {
+    console.log(error);
     return res.status(500).json({ message: error.message });
   }
 });
