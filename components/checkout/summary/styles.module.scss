@@ -18,6 +18,13 @@
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px 0 #000, 0 0.5px 1px 0 #000;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.02);
+        }
+  
 }
 .infos {
   margin-top: 10px;
@@ -48,4 +55,10 @@
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px 0 #000, 0 0.5px 1px 0 #000;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.02);
+        }
 }

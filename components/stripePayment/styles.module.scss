@@ -1,0 +1,26 @@
+.stripe {
+  button {
+    margin-top: 1rem;
+    height: 45px;
+    width: 100%;
+    background: #000;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.2s;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px 0 #000, 0 0.5px 1px 0 #000;
+    transition: transform 0.3s ease;
+   
+    &:hover {
+      background: #8b8989;
+      border-color: #494848;
+      color: #000;
+      transform: scale(1.06);
+    }
+  }
+  .error {
+    padding: 0;
+  }
+}

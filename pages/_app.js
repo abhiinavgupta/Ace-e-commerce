@@ -5,7 +5,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { persistStore } from "redux-persist";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
-// import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 let persistor = persistStore(store);
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
       <SessionProvider session={session}>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            {/* <PayPalScriptProvider deferLoading={true}>
+            <PayPalScriptProvider deferLoading={true}>
               <ToastContainer
                 position="top-right"
                 autoClose={5000}
@@ -35,9 +35,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
                 draggable
                 pauseOnHover
                 theme="colored"
-              /> */}
+              />
               <Component {...pageProps} />
-            {/* </PayPalScriptProvider> */}
+            </PayPalScriptProvider>
           </PersistGate>
         </Provider>
       </SessionProvider>

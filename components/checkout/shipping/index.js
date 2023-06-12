@@ -17,7 +17,7 @@ import { GiPhone } from "react-icons/gi";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { IoMdArrowDropupCircle } from "react-icons/io";
 import { AiOutlinePlus } from "react-icons/ai";
-import { IoIosRemoveCircleOutline } from "react-icons/io";
+import { MdOutlineRemoveCircle } from "react-icons/md";
 const initialValues = {
   firstName: "",
   lastName: "",
@@ -108,7 +108,7 @@ export default function Shipping({ user, addresses, setAddresses, profile }) {
               className={styles.address__delete}
               onClick={() => deleteHandler(address._id)}
             >
-              <IoIosRemoveCircleOutline />
+              <MdOutlineRemoveCircle />
             </div>
             <div
               className={`${styles.address} ${address.active && styles.active}`}

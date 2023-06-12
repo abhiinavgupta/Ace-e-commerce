@@ -80,7 +80,7 @@ export default function Summary({
               </button>
               <div className={styles.infos}>
                 <span>
-                  Total : <b>{cart.cartTotal}$</b>{" "}
+                  Total : <b>₹ {cart.cartTotal}</b>{" "}
                 </span>
                 {discount > 0 && (
                   <span className={styles.coupon_span}>
@@ -90,7 +90,7 @@ export default function Summary({
                 {totalAfterDiscount < cart.cartTotal &&
                   totalAfterDiscount != "" && (
                     <span>
-                      New price : <b>{totalAfterDiscount}$</b>
+                      New price : <b>₹ {totalAfterDiscount}</b>
                     </span>
                   )}
               </div>

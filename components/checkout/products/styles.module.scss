@@ -2,6 +2,8 @@
   border: 1px solid #ccc;
   padding: 1rem;
   margin-top: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px 0 #000, 0 0.5px 1px 0 #000;
   &__header {
     display: flex;
     align-items: center;
@@ -22,13 +24,20 @@
 .product {
   &__img {
     position: relative;
+    box-shadow: 0px 3px 5px 0 #000, 0 0.5px 1px 0 #000;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
     img {
       width: 140px;
       height: 180px;
       object-fit: cover;
       border-radius: 5px;
     }
+    
   }
+  
   &__infos {
     background: #f3f2f0;
     padding: 5px;
@@ -55,4 +64,5 @@
     font-size: 14px;
     font-weight: 700;
   }
+  
 }
