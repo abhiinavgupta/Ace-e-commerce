@@ -38,18 +38,18 @@ export default function Sidebar() {
         <div
           style={{
             transform: `${expand ? "rotate(180deg)" : ""}`,
-            transition: "all .2s",
+            transition: "all .5s",
           }}
         >
           <MdArrowForwardIos />
         </div>
       </div>
       <div className={styles.sidebar__container}>
-        <div className={styles.sidebar__header}>
+        {/* <div className={styles.sidebar__header}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div> */}
         <div className={styles.sidebar__user}>
           <img src={session?.user?.image} alt="" />
           <div className={styles.show}>
@@ -59,7 +59,7 @@ export default function Sidebar() {
         </div>
         <ul className={styles.sidebar__list}>
           <li className={route == undefined ? styles.active : ""}>
-            <Link href="/admin/dashboard">
+            <Link legacyBehavior href="/admin/dashboard">
               <a>
                 <MdSpaceDashboard />
                 <span className={styles.show}>Dashboard</span>
@@ -67,7 +67,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className={route == "sales" ? styles.active : ""}>
-            <Link href="/admin/dashboard/sales">
+            <Link legacyBehavior href="/admin/dashboard/sales">
               <a>
                 <FcSalesPerformance />
                 <span className={styles.show}>Sales</span>
@@ -75,7 +75,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className={route == "orders" ? styles.active : ""}>
-            <Link href="/admin/dashboard/orders">
+            <Link legacyBehavior href="/admin/dashboard/orders">
               <a>
                 <IoListCircleSharp />
                 <span className={styles.show}>Orders</span>
@@ -83,7 +83,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className={route == "users" ? styles.active : ""}>
-            <Link href="/admin/dashboard/users">
+            <Link legacyBehavior href="/admin/dashboard/users">
               <a>
                 <ImUsers />
                 <span className={styles.show}>Users</span>
@@ -91,7 +91,7 @@ export default function Sidebar() {
             </Link>
           </li>
           <li className={route == "messages" ? styles.active : ""}>
-            <Link href="/admin/dashboard/messages">
+            <Link legacyBehavior href="/admin/dashboard/messages">
               <a>
                 <AiFillMessage />
                 <span className={styles.show}>Messages</span>
@@ -105,7 +105,7 @@ export default function Sidebar() {
           </div>
           <ul className={styles.sidebar__list}>
             <li className={route == "product/all" ? styles.active : ""}>
-              <Link href="/admin/dashboard/product/all">
+              <Link legacyBehavior href="/admin/dashboard/product/all">
                 <a>
                   <FaThList />
                   <span className={styles.show}>All Products</span>
@@ -113,7 +113,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className={route == "product/create" ? styles.active : ""}>
-              <Link href="/admin/dashboard/product/create">
+              <Link legacyBehavior href="/admin/dashboard/product/create">
                 <a>
                   <BsPatchPlus />
                   <span className={styles.show}>Create Product</span>
@@ -128,7 +128,7 @@ export default function Sidebar() {
           </div>
           <ul className={styles.sidebar__list}>
             <li className={route == "categories" ? styles.active : ""}>
-              <Link href="/admin/dashboard/categories">
+              <Link legacyBehavior href="/admin/dashboard/categories">
                 <a>
                   <MdOutlineCategory />
                   <span className={styles.show}>Categories</span>
@@ -136,7 +136,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className={route == "subCategories" ? styles.active : ""}>
-              <Link href="/admin/dashboard/subCategories">
+              <Link legacyBehavior href="/admin/dashboard/subCategories">
                 <a>
                   <div style={{ transform: "rotate(180deg)" }}>
                     <MdOutlineCategory />
@@ -153,7 +153,7 @@ export default function Sidebar() {
           </div>
           <ul className={styles.sidebar__list}>
             <li className={route == "coupons" ? styles.active : ""}>
-              <Link href="/admin/dashboard/coupons">
+              <Link legacyBehavior href="/admin/dashboard/coupons">
                 <a>
                   <RiCoupon3Fill />
                   <span className={styles.show}>Coupons</span>
@@ -169,28 +169,28 @@ export default function Sidebar() {
             }`}
           >
             <li>
-              <Link href="">
+              <Link legacyBehavior href="">
                 <a>
                   <RiSettingsLine />
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link legacyBehavior href="">
                 <a>
                   <IoNotificationsSharp />
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link legacyBehavior href="">
                 <a>
                   <AiFillMessage />
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="">
+              <Link legacyBehavior href="">
                 <a>
                   <RiLogoutCircleFill />
                 </a>
