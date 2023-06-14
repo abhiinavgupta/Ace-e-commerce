@@ -24,7 +24,7 @@ export default function Images({
       if (images.length == 6) {
         dispatch(
           showDialog({
-            header: "Maximu 6 images are allowed.",
+            header: "Maximum 6 images are allowed.",
             msgs: [
               {
                 msg: `Maximum of total six images are allowed.`,
