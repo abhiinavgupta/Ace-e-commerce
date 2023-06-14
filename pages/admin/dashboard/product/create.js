@@ -133,8 +133,8 @@ export default function create({ parents, categories }) {
       );
     }
   };
-  const uploaded_images = [];
-  const style_img = "";
+  let uploaded_images = [];
+  let style_img = "";
   const createProductHandler = async () => {
     setLoading(true);
     if (images) {
@@ -147,7 +147,7 @@ export default function create({ parents, categories }) {
       temp.forEach((image) => {
         formData.append("file", image);
       });
-      // uploaded_images = await uploadImages(formData);
+      uploaded_images = await uploadImages(formData);
     }
     if (product.color.image) {
       let temp = dataURItoBlob(product.color.image);
@@ -156,7 +156,7 @@ export default function create({ parents, categories }) {
       formData.append("path", path);
       formData.append("file", temp);
       let cloudinary_style_img = await uploadImages(formData);
-      // style_img = cloudinary_style_img[0].url;
+      style_img = cloudinary_style_img[0].url;
     }
     try {
       const { data } = await axios.post("/api/admin/product", {
